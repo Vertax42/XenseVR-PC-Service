@@ -1,0 +1,16 @@
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_automoc_json_extraction.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_qmltyperegistration.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/all_qmltyperegistrations.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_qmllint.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_qmllint_json.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_qmllint_module.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/all_qmllint.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/all_qmllint_json.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/all_qmllint_module.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_tooling.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_qmlimportscan.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen.dir

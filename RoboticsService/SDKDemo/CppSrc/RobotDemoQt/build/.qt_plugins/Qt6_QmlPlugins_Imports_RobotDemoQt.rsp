@@ -1,0 +1,14 @@
+-rootPath
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
+-cmake-output
+-output-file
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.qt_plugins/Qt6_QmlPlugins_Imports_RobotDemoQt.cmake
+-importPath
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt
+-importPath
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
+-importPath
+/home/ubuntu/Qt/6.6.3/gcc_64/./qml
+-qrcFiles
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmake_RobotDemoQt.qrc
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/RobotDemoQt_raw_qml_0.qrc

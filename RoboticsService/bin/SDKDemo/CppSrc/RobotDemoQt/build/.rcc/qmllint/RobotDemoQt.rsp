@@ -1,0 +1,10 @@
+--bare
+-I
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
+-I
+/home/ubuntu/Qt/6.6.3/gcc_64/./qml
+--resource
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmake_RobotDemoQt.qrc
+--resource
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/RobotDemoQt_raw_qml_0.qrc
+/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.qml

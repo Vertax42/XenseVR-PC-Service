@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/RobotDemoQt">
+    <file alias="qmldir">/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt/qmldir</file>
+  </qresource>
+</RCC>
+
