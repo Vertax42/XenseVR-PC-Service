@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
+CMAKE_SOURCE_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
+CMAKE_BINARY_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
 
 # Utility rule file for RobotDemoQt_automoc_json_extraction.
 
@@ -67,8 +67,8 @@ include CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/compiler_depend.make
 include CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/progress.make
 
 CMakeFiles/RobotDemoQt_automoc_json_extraction: /home/ubuntu/Qt/6.6.3/gcc_64/./libexec/cmake_automoc_parser
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running AUTOMOC file extraction for target RobotDemoQt"
-	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/cmake_automoc_parser --cmake-autogen-cache-file /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen.dir/ParseCache.txt --cmake-autogen-info-file /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen.dir/AutogenInfo.json --output-file-path /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/RobotDemoQt_json_file_list.txt --timestamp-file-path /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/RobotDemoQt_json_file_list.txt.timestamp --cmake-autogen-include-dir-path /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/include
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running AUTOMOC file extraction for target RobotDemoQt"
+	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/cmake_automoc_parser --cmake-autogen-cache-file /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen.dir/ParseCache.txt --cmake-autogen-info-file /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen.dir/AutogenInfo.json --output-file-path /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/RobotDemoQt_json_file_list.txt --timestamp-file-path /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/RobotDemoQt_json_file_list.txt.timestamp --cmake-autogen-include-dir-path /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/include
 
 RobotDemoQt_automoc_json_extraction: CMakeFiles/RobotDemoQt_automoc_json_extraction
 RobotDemoQt_automoc_json_extraction: CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/clean:
 .PHONY : CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/clean
 
 CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/depend:
-	cd /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/depend
 

@@ -1,18 +1,55 @@
-# 以'#'开始的行，被视为注释.                                                                                                                          
+# 以'#'开始的行，被视为注释.
 
-# 忽略*.o和*.a文件
+# ==================== 编译产物 ====================
 *.o
-# 忽略*.b和*.B文件，my.b除外
+*.obj
+*.a
 *.[bB]
 *.pdb
 *.ilk
+*.exp
+
+# ==================== CMake 构建目录和文件 ====================
+/RelWithDebInfo/
+/build/
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+*.cmake
+!CMakeLists.txt
+
+# ==================== Qt 相关 ====================
 *.user
 *.qmake
 *.stash
+*.qmake.stash
+moc_*
+qrc_*
+ui_*.h
+*.autosave
+*.pro.user*
+/build-*/
+
+# ==================== Makefile ====================
 Makefile
 *.Debug
 *.Release
-*.obj
-*.pdb
-*.exp
+*.make
+
+# ==================== IDE 和编辑器 ====================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ==================== 日志和临时文件 ====================
+*.log
+*.tmp
+*.bak
+
+# ==================== 旧的特定构建目录 ====================
 /build-RoboticsService-Desktop_Qt_5_14_2_MSVC2017_64bit-Debug

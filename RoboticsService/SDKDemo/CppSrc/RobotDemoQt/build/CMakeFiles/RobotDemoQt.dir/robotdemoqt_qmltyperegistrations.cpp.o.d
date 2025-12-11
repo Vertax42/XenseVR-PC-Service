@@ -1,5 +1,5 @@
 CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o: \
- /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp \
+ /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp \
  /usr/include/stdc-predef.h \
  /home/ubuntu/Qt/6.6.3/gcc_64/include/QtQml/qqml.h \
  /home/ubuntu/Qt/6.6.3/gcc_64/include/QtQml/qqmlprivate.h \

@@ -54,6 +54,8 @@ if [ ! -f "$RELEASE_DIR/CMakeCache.txt" ] || [ "$2" = "--clean" ] || [ "$1" = "-
         mkdir bin
         rm -rf RelWithDebInfo
         mkdir RelWithDebInfo
+        echo "Clean completed."
+        exit 0
     fi
 
     if [ "$1" = "overseas" ]; then

@@ -1,7 +1,7 @@
 CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o: \
- /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.cpp \
+ /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.cpp \
  /usr/include/stdc-predef.h \
- /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.h \
+ /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.h \
  /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/QDebug \
  /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/qdebug.h \
  /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/qcontainerfwd.h \
@@ -346,7 +346,7 @@ CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o: \
  /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/qdebug.h \
  /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/qcoreapplication_platform.h \
  /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/qcoreapplication.h \
- /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/../../../SDK/include/PXREARobotSDK.h \
+ /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/../../../SDK/include/PXREARobotSDK.h \
  /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/QTimer \
  /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/qtimer.h \
  /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/qbasictimer.h \

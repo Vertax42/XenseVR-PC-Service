@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
+CMAKE_SOURCE_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
+CMAKE_BINARY_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
 
 # Utility rule file for all_qmltyperegistrations.
 
@@ -78,6 +78,6 @@ CMakeFiles/all_qmltyperegistrations.dir/clean:
 .PHONY : CMakeFiles/all_qmltyperegistrations.dir/clean
 
 CMakeFiles/all_qmltyperegistrations.dir/depend:
-	cd /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/all_qmltyperegistrations.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/all_qmltyperegistrations.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/all_qmltyperegistrations.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
+CMAKE_SOURCE_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
+CMAKE_BINARY_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
 
 # Utility rule file for RobotDemoQt_autogen_timestamp_deps.
 
@@ -72,8 +72,8 @@ CMakeFiles/RobotDemoQt_autogen_timestamp_deps: .rcc/qmlcache/RobotDemoQt_qmlcach
 .rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp: .rcc/qmlcache/RobotDemoQt_qml_loader_file_list.rsp
 .rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp: .rcc/qmake_RobotDemoQt.qrc
 .rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp: .rcc/RobotDemoQt_raw_qml_0.qrc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating .rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp"
-	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/qmlcachegen --resource-name qmlcache_RobotDemoQt -o /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp @/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qml_loader_file_list.rsp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating .rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp"
+	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/qmlcachegen --resource-name qmlcache_RobotDemoQt -o /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp @/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qml_loader_file_list.rsp
 
 RobotDemoQt_autogen_timestamp_deps: .rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp
 RobotDemoQt_autogen_timestamp_deps: CMakeFiles/RobotDemoQt_autogen_timestamp_deps
@@ -89,6 +89,6 @@ CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/depend:
-	cd /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/depend
 

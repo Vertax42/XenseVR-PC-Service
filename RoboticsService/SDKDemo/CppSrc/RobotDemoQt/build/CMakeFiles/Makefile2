@@ -54,10 +54,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
+CMAKE_SOURCE_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
+CMAKE_BINARY_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -99,14 +99,14 @@ CMakeFiles/RobotDemoQt.dir/all: CMakeFiles/RobotDemoQt_autogen_timestamp_deps.di
 CMakeFiles/RobotDemoQt.dir/all: CMakeFiles/RobotDemoQt_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt.dir/build.make CMakeFiles/RobotDemoQt.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt.dir/build.make CMakeFiles/RobotDemoQt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target RobotDemoQt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target RobotDemoQt"
 .PHONY : CMakeFiles/RobotDemoQt.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RobotDemoQt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RobotDemoQt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/RobotDemoQt.dir/rule
 
 # Convenience name for target.
@@ -125,14 +125,14 @@ CMakeFiles/RobotDemoQt.dir/clean:
 CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/all: CMakeFiles/RobotDemoQt_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/build.make CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/build.make CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=20 "Built target RobotDemoQt_automoc_json_extraction"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=20 "Built target RobotDemoQt_automoc_json_extraction"
 .PHONY : CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/rule
 
 # Convenience name for target.
@@ -151,14 +151,14 @@ CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/clean:
 CMakeFiles/RobotDemoQt_qmltyperegistration.dir/all: CMakeFiles/RobotDemoQt_automoc_json_extraction.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_qmltyperegistration.dir/build.make CMakeFiles/RobotDemoQt_qmltyperegistration.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_qmltyperegistration.dir/build.make CMakeFiles/RobotDemoQt_qmltyperegistration.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=22,23,24 "Built target RobotDemoQt_qmltyperegistration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=22,23,24 "Built target RobotDemoQt_qmltyperegistration"
 .PHONY : CMakeFiles/RobotDemoQt_qmltyperegistration.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RobotDemoQt_qmltyperegistration.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RobotDemoQt_qmltyperegistration.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/RobotDemoQt_qmltyperegistration.dir/rule
 
 # Convenience name for target.
@@ -177,14 +177,14 @@ CMakeFiles/RobotDemoQt_qmltyperegistration.dir/clean:
 CMakeFiles/all_qmltyperegistrations.dir/all: CMakeFiles/RobotDemoQt_qmltyperegistration.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_qmltyperegistrations.dir/build.make CMakeFiles/all_qmltyperegistrations.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_qmltyperegistrations.dir/build.make CMakeFiles/all_qmltyperegistrations.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target all_qmltyperegistrations"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target all_qmltyperegistrations"
 .PHONY : CMakeFiles/all_qmltyperegistrations.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/all_qmltyperegistrations.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/all_qmltyperegistrations.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/all_qmltyperegistrations.dir/rule
 
 # Convenience name for target.
@@ -203,14 +203,14 @@ CMakeFiles/all_qmltyperegistrations.dir/clean:
 CMakeFiles/RobotDemoQt_qmllint.dir/all: CMakeFiles/all_qmltyperegistrations.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_qmllint.dir/build.make CMakeFiles/RobotDemoQt_qmllint.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_qmllint.dir/build.make CMakeFiles/RobotDemoQt_qmllint.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target RobotDemoQt_qmllint"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target RobotDemoQt_qmllint"
 .PHONY : CMakeFiles/RobotDemoQt_qmllint.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RobotDemoQt_qmllint.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RobotDemoQt_qmllint.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/RobotDemoQt_qmllint.dir/rule
 
 # Convenience name for target.
@@ -229,14 +229,14 @@ CMakeFiles/RobotDemoQt_qmllint.dir/clean:
 CMakeFiles/RobotDemoQt_qmllint_json.dir/all: CMakeFiles/all_qmltyperegistrations.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_qmllint_json.dir/build.make CMakeFiles/RobotDemoQt_qmllint_json.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_qmllint_json.dir/build.make CMakeFiles/RobotDemoQt_qmllint_json.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target RobotDemoQt_qmllint_json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target RobotDemoQt_qmllint_json"
 .PHONY : CMakeFiles/RobotDemoQt_qmllint_json.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RobotDemoQt_qmllint_json.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RobotDemoQt_qmllint_json.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/RobotDemoQt_qmllint_json.dir/rule
 
 # Convenience name for target.
@@ -255,14 +255,14 @@ CMakeFiles/RobotDemoQt_qmllint_json.dir/clean:
 CMakeFiles/RobotDemoQt_qmllint_module.dir/all: CMakeFiles/all_qmltyperegistrations.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_qmllint_module.dir/build.make CMakeFiles/RobotDemoQt_qmllint_module.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_qmllint_module.dir/build.make CMakeFiles/RobotDemoQt_qmllint_module.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target RobotDemoQt_qmllint_module"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target RobotDemoQt_qmllint_module"
 .PHONY : CMakeFiles/RobotDemoQt_qmllint_module.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RobotDemoQt_qmllint_module.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RobotDemoQt_qmllint_module.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/RobotDemoQt_qmllint_module.dir/rule
 
 # Convenience name for target.
@@ -281,14 +281,14 @@ CMakeFiles/RobotDemoQt_qmllint_module.dir/clean:
 CMakeFiles/all_qmllint.dir/all: CMakeFiles/RobotDemoQt_qmllint.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_qmllint.dir/build.make CMakeFiles/all_qmllint.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_qmllint.dir/build.make CMakeFiles/all_qmllint.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target all_qmllint"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target all_qmllint"
 .PHONY : CMakeFiles/all_qmllint.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/all_qmllint.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/all_qmllint.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/all_qmllint.dir/rule
 
 # Convenience name for target.
@@ -307,14 +307,14 @@ CMakeFiles/all_qmllint.dir/clean:
 CMakeFiles/all_qmllint_json.dir/all: CMakeFiles/RobotDemoQt_qmllint_json.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_qmllint_json.dir/build.make CMakeFiles/all_qmllint_json.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_qmllint_json.dir/build.make CMakeFiles/all_qmllint_json.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target all_qmllint_json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target all_qmllint_json"
 .PHONY : CMakeFiles/all_qmllint_json.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/all_qmllint_json.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/all_qmllint_json.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/all_qmllint_json.dir/rule
 
 # Convenience name for target.
@@ -333,14 +333,14 @@ CMakeFiles/all_qmllint_json.dir/clean:
 CMakeFiles/all_qmllint_module.dir/all: CMakeFiles/RobotDemoQt_qmllint_module.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_qmllint_module.dir/build.make CMakeFiles/all_qmllint_module.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_qmllint_module.dir/build.make CMakeFiles/all_qmllint_module.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target all_qmllint_module"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num= "Built target all_qmllint_module"
 .PHONY : CMakeFiles/all_qmllint_module.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/all_qmllint_module.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/all_qmllint_module.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/all_qmllint_module.dir/rule
 
 # Convenience name for target.
@@ -359,14 +359,14 @@ CMakeFiles/all_qmllint_module.dir/clean:
 CMakeFiles/RobotDemoQt_tooling.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_tooling.dir/build.make CMakeFiles/RobotDemoQt_tooling.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_tooling.dir/build.make CMakeFiles/RobotDemoQt_tooling.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=25 "Built target RobotDemoQt_tooling"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=25 "Built target RobotDemoQt_tooling"
 .PHONY : CMakeFiles/RobotDemoQt_tooling.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RobotDemoQt_tooling.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RobotDemoQt_tooling.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/RobotDemoQt_tooling.dir/rule
 
 # Convenience name for target.
@@ -385,14 +385,14 @@ CMakeFiles/RobotDemoQt_tooling.dir/clean:
 CMakeFiles/RobotDemoQt_qmlimportscan.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_qmlimportscan.dir/build.make CMakeFiles/RobotDemoQt_qmlimportscan.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_qmlimportscan.dir/build.make CMakeFiles/RobotDemoQt_qmlimportscan.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=21 "Built target RobotDemoQt_qmlimportscan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=21 "Built target RobotDemoQt_qmlimportscan"
 .PHONY : CMakeFiles/RobotDemoQt_qmlimportscan.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RobotDemoQt_qmlimportscan.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RobotDemoQt_qmlimportscan.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/RobotDemoQt_qmlimportscan.dir/rule
 
 # Convenience name for target.
@@ -412,14 +412,14 @@ CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/all: CMakeFiles/RobotDemoQt_to
 CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/all: CMakeFiles/RobotDemoQt_qmlimportscan.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/build.make CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/build.make CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=19 "Built target RobotDemoQt_autogen_timestamp_deps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=19 "Built target RobotDemoQt_autogen_timestamp_deps"
 .PHONY : CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/rule
 
 # Convenience name for target.
@@ -438,14 +438,14 @@ CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/clean:
 CMakeFiles/RobotDemoQt_autogen.dir/all: CMakeFiles/RobotDemoQt_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_autogen.dir/build.make CMakeFiles/RobotDemoQt_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotDemoQt_autogen.dir/build.make CMakeFiles/RobotDemoQt_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=18 "Built target RobotDemoQt_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=18 "Built target RobotDemoQt_autogen"
 .PHONY : CMakeFiles/RobotDemoQt_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RobotDemoQt_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RobotDemoQt_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles 0
 .PHONY : CMakeFiles/RobotDemoQt_autogen.dir/rule
 
 # Convenience name for target.

@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
+CMAKE_SOURCE_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
+CMAKE_BINARY_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
 
 # Utility rule file for RobotDemoQt_qmllint.
 
@@ -67,9 +67,9 @@ include CMakeFiles/RobotDemoQt_qmllint.dir/compiler_depend.make
 include CMakeFiles/RobotDemoQt_qmllint.dir/progress.make
 
 CMakeFiles/RobotDemoQt_qmllint: /home/ubuntu/Qt/6.6.3/gcc_64/bin/qmllint
-CMakeFiles/RobotDemoQt_qmllint: /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.qml
+CMakeFiles/RobotDemoQt_qmllint: /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.qml
 CMakeFiles/RobotDemoQt_qmllint: .rcc/qmllint/RobotDemoQt.rsp
-	cd /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt && /home/ubuntu/Qt/6.6.3/gcc_64/bin/qmllint @/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmllint/RobotDemoQt.rsp
+	cd /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt && /home/ubuntu/Qt/6.6.3/gcc_64/bin/qmllint @/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmllint/RobotDemoQt.rsp
 
 RobotDemoQt_qmllint: CMakeFiles/RobotDemoQt_qmllint
 RobotDemoQt_qmllint: CMakeFiles/RobotDemoQt_qmllint.dir/build.make
@@ -84,6 +84,6 @@ CMakeFiles/RobotDemoQt_qmllint.dir/clean:
 .PHONY : CMakeFiles/RobotDemoQt_qmllint.dir/clean
 
 CMakeFiles/RobotDemoQt_qmllint.dir/depend:
-	cd /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_qmllint.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_qmllint.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/RobotDemoQt_qmllint.dir/depend
 

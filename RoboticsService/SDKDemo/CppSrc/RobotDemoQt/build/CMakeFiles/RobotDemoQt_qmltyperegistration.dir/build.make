@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
+CMAKE_SOURCE_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
+CMAKE_BINARY_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
 
 # Utility rule file for RobotDemoQt_qmltyperegistration.
 
@@ -79,23 +79,23 @@ robotdemoqt_qmltyperegistrations.cpp: /home/ubuntu/Qt/6.6.3/gcc_64/metatypes/qt6
 robotdemoqt_qmltyperegistrations.cpp: /home/ubuntu/Qt/6.6.3/gcc_64/metatypes/qt6gui_relwithdebinfo_metatypes.json
 robotdemoqt_qmltyperegistrations.cpp: /home/ubuntu/Qt/6.6.3/gcc_64/metatypes/qt6qmlmodels_relwithdebinfo_metatypes.json
 robotdemoqt_qmltyperegistrations.cpp: /home/ubuntu/Qt/6.6.3/gcc_64/metatypes/qt6opengl_relwithdebinfo_metatypes.json
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic QML type registration for target RobotDemoQt"
-	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/qmltyperegistrar --generate-qmltypes=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt/RobotDemoQt.qmltypes --import-name=RobotDemoQt --major-version=1 --minor-version=0 @/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/qmltypes/RobotDemoQt_foreign_types.txt -o /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json
-	/usr/local/bin/cmake -E make_directory /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.generated
-	/usr/local/bin/cmake -E touch /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.generated/RobotDemoQt.qmltypes
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic QML type registration for target RobotDemoQt"
+	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/qmltyperegistrar --generate-qmltypes=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt/RobotDemoQt.qmltypes --import-name=RobotDemoQt --major-version=1 --minor-version=0 @/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/qmltypes/RobotDemoQt_foreign_types.txt -o /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json
+	/usr/local/bin/cmake -E make_directory /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.generated
+	/usr/local/bin/cmake -E touch /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.generated/RobotDemoQt.qmltypes
 
 RobotDemoQt/RobotDemoQt.qmltypes: robotdemoqt_qmltyperegistrations.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate RobotDemoQt/RobotDemoQt.qmltypes
 
 meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json: meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json"
 	/usr/local/bin/cmake -E true
 
 meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen: /home/ubuntu/Qt/6.6.3/gcc_64/./libexec/moc
 meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen: meta_types/RobotDemoQt_json_file_list.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Running moc --collect-json for target RobotDemoQt"
-	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/moc -o /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen --collect-json @/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/RobotDemoQt_json_file_list.txt
-	/usr/local/bin/cmake -E copy_if_different /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Running moc --collect-json for target RobotDemoQt"
+	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/moc -o /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen --collect-json @/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/RobotDemoQt_json_file_list.txt
+	/usr/local/bin/cmake -E copy_if_different /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json
 
 RobotDemoQt_qmltyperegistration: CMakeFiles/RobotDemoQt_qmltyperegistration
 RobotDemoQt_qmltyperegistration: RobotDemoQt/RobotDemoQt.qmltypes
@@ -114,6 +114,6 @@ CMakeFiles/RobotDemoQt_qmltyperegistration.dir/clean:
 .PHONY : CMakeFiles/RobotDemoQt_qmltyperegistration.dir/clean
 
 CMakeFiles/RobotDemoQt_qmltyperegistration.dir/depend:
-	cd /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_qmltyperegistration.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_qmltyperegistration.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/RobotDemoQt_qmltyperegistration.dir/depend
 

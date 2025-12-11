@@ -1,5 +1,0 @@
---resource
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmake_RobotDemoQt.qrc
---resource
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/RobotDemoQt_raw_qml_0.qrc
-/RobotDemoQt/main.qml

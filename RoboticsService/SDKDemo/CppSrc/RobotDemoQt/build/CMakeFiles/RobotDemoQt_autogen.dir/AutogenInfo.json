@@ -1,15 +1,15 @@
 {
-	"BUILD_DIR" : "/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen",
-	"CMAKE_BINARY_DIR" : "/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt",
+	"BUILD_DIR" : "/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen",
+	"CMAKE_BINARY_DIR" : "/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt",
 	"CMAKE_EXECUTABLE" : "/usr/local/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/CMakeLists.txt",
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/CMakeLists.txt",
 		"/usr/local/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake",
 		"/usr/local/share/cmake-3.29/Modules/CMakeSystem.cmake.in",
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/3.29.3/CMakeSystem.cmake",
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/3.29.3/CMakeSystem.cmake",
 		"/usr/local/share/cmake-3.29/Modules/CMakeUnixFindMake.cmake",
 		"/usr/local/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/usr/local/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake",
@@ -63,7 +63,7 @@
 		"/usr/local/share/cmake-3.29/Modules/CMakeFindBinUtils.cmake",
 		"/usr/local/share/cmake-3.29/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"/usr/local/share/cmake-3.29/Modules/CMakeCXXCompiler.cmake.in",
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake",
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake",
 		"/usr/local/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/local/share/cmake-3.29/Modules/CMakeGenericSystem.cmake",
 		"/usr/local/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake",
@@ -89,7 +89,7 @@
 		"/usr/local/share/cmake-3.29/Modules/CMakeDetermineCompileFeatures.cmake",
 		"/usr/local/share/cmake-3.29/Modules/Internal/FeatureTesting.cmake",
 		"/usr/local/share/cmake-3.29/Modules/CMakeCXXCompiler.cmake.in",
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake",
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake",
 		"/home/ubuntu/Qt/6.6.3/gcc_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/home/ubuntu/Qt/6.6.3/gcc_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/home/ubuntu/Qt/6.6.3/gcc_64/lib/cmake/Qt6/Qt6Config.cmake",
@@ -1001,22 +1001,22 @@
 		"/home/ubuntu/Qt/6.6.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/home/ubuntu/Qt/6.6.3/gcc_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt",
+	"CMAKE_SOURCE_DIR" : "/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/deps",
+	"DEP_FILE" : "/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "RobotDemoQt_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.h",
+			"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.h",
 			"MU",
 			"EWIEGA46WW/moc_SDKCaller.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -1038,8 +1038,8 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt",
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDK/include",
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt",
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDK/include",
 		"/home/ubuntu/Qt/6.6.3/gcc_64/include/QtQml/6.6.3",
 		"/home/ubuntu/Qt/6.6.3/gcc_64/include/QtQml/6.6.3/QtQml",
 		"/home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/6.6.3",
@@ -1081,37 +1081,37 @@
 		"-c",
 		"/usr/local/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp",
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp",
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_qmake_RobotDemoQt.cpp",
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp"
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp",
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp",
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_qmake_RobotDemoQt.cpp",
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 24,
-	"PARSE_CACHE_FILE" : "/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/home/ubuntu/Qt/6.6.3/gcc_64/./libexec/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 6,
-	"SETTINGS_FILE" : "/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.cpp",
+			"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp",
+			"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.cpp",
+			"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.cpp",
 			"MU",
 			null
 		]
@@ -1120,10 +1120,10 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp",
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp",
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_qmake_RobotDemoQt.cpp",
-		"/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp"
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp",
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp",
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_qmake_RobotDemoQt.cpp",
+		"/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp"
 	],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : false,

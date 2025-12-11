@@ -656,7 +656,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/ubuntu/Qt/6.6.3/gcc_64/lib/cmake/Qt6Quick/Qt6QuickTargets-relwithdebinfo.cmake"
   "/home/ubuntu/Qt/6.6.3/gcc_64/lib/cmake/Qt6Quick/Qt6QuickTargets.cmake"
   "/home/ubuntu/Qt/6.6.3/gcc_64/lib/cmake/Qt6Quick/Qt6QuickVersionlessTargets.cmake"
-  "/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/CMakeLists.txt"
+  "/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/CMakeLists.txt"
   "CMakeFiles/3.29.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.3/CMakeSystem.cmake"
   "/usr/local/share/cmake-3.29/Modules/CMakeCXXCompiler.cmake.in"

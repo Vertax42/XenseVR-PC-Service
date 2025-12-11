@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 static const unsigned char qt_resource_data[] = {
-  // /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.qml
+  // /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.qml
   0x0,0x0,0x4,0x5a,
   0x28,
   0xb5,0x2f,0xfd,0x60,0x3a,0x13,0x85,0x22,0x0,0x66,0xa8,0x80,0x3b,0x40,0xab,0x34,

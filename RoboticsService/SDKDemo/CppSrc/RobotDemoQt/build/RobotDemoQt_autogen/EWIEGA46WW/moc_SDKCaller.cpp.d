@@ -1,5 +1,5 @@
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/EWIEGA46WW/moc_SDKCaller.cpp: /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.h \
-  /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/moc_predefs.h \
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/EWIEGA46WW/moc_SDKCaller.cpp: /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.h \
+  /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/moc_predefs.h \
   /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/QCoreApplication \
   /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/QDebug \
   /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/QJsonDocument \
@@ -133,7 +133,7 @@
   /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/qversiontagging.h \
   /home/ubuntu/Qt/6.6.3/gcc_64/include/QtCore/qxptype_traits.h \
-  /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDK/include/PXREARobotSDK.h \
+  /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDK/include/PXREARobotSDK.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

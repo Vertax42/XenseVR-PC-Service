@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
+CMAKE_SOURCE_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
+CMAKE_BINARY_DIR = /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RobotDemoQt.dir/depend.make
@@ -71,9 +71,9 @@ include CMakeFiles/RobotDemoQt.dir/flags.make
 
 meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen: /home/ubuntu/Qt/6.6.3/gcc_64/./libexec/moc
 meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen: meta_types/RobotDemoQt_json_file_list.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running moc --collect-json for target RobotDemoQt"
-	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/moc -o /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen --collect-json @/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/RobotDemoQt_json_file_list.txt
-	/usr/local/bin/cmake -E copy_if_different /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running moc --collect-json for target RobotDemoQt"
+	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/moc -o /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen --collect-json @/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/RobotDemoQt_json_file_list.txt
+	/usr/local/bin/cmake -E copy_if_different /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json
 
 robotdemoqt_qmltyperegistrations.cpp: qmltypes/RobotDemoQt_foreign_types.txt
 robotdemoqt_qmltyperegistrations.cpp: meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json
@@ -85,10 +85,10 @@ robotdemoqt_qmltyperegistrations.cpp: /home/ubuntu/Qt/6.6.3/gcc_64/metatypes/qt6
 robotdemoqt_qmltyperegistrations.cpp: /home/ubuntu/Qt/6.6.3/gcc_64/metatypes/qt6gui_relwithdebinfo_metatypes.json
 robotdemoqt_qmltyperegistrations.cpp: /home/ubuntu/Qt/6.6.3/gcc_64/metatypes/qt6qmlmodels_relwithdebinfo_metatypes.json
 robotdemoqt_qmltyperegistrations.cpp: /home/ubuntu/Qt/6.6.3/gcc_64/metatypes/qt6opengl_relwithdebinfo_metatypes.json
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic QML type registration for target RobotDemoQt"
-	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/qmltyperegistrar --generate-qmltypes=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt/RobotDemoQt.qmltypes --import-name=RobotDemoQt --major-version=1 --minor-version=0 @/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/qmltypes/RobotDemoQt_foreign_types.txt -o /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json
-	/usr/local/bin/cmake -E make_directory /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.generated
-	/usr/local/bin/cmake -E touch /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.generated/RobotDemoQt.qmltypes
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic QML type registration for target RobotDemoQt"
+	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/qmltyperegistrar --generate-qmltypes=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt/RobotDemoQt.qmltypes --import-name=RobotDemoQt --major-version=1 --minor-version=0 @/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/qmltypes/RobotDemoQt_foreign_types.txt -o /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json
+	/usr/local/bin/cmake -E make_directory /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.generated
+	/usr/local/bin/cmake -E touch /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.generated/RobotDemoQt.qmltypes
 
 RobotDemoQt/RobotDemoQt.qmltypes: robotdemoqt_qmltyperegistrations.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate RobotDemoQt/RobotDemoQt.qmltypes
@@ -96,153 +96,153 @@ RobotDemoQt/RobotDemoQt.qmltypes: robotdemoqt_qmltyperegistrations.cpp
 .rcc/qrc_qmake_RobotDemoQt.cpp: RobotDemoQt/qmldir
 .rcc/qrc_qmake_RobotDemoQt.cpp: .rcc/qmake_RobotDemoQt.qrc
 .rcc/qrc_qmake_RobotDemoQt.cpp: /home/ubuntu/Qt/6.6.3/gcc_64/./libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Running rcc for resource qmake_RobotDemoQt"
-	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/rcc --output /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_qmake_RobotDemoQt.cpp --name qmake_RobotDemoQt /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmake_RobotDemoQt.qrc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Running rcc for resource qmake_RobotDemoQt"
+	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/rcc --output /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_qmake_RobotDemoQt.cpp --name qmake_RobotDemoQt /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmake_RobotDemoQt.qrc
 
 .rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp: /home/ubuntu/Qt/6.6.3/gcc_64/libexec/qmlcachegen
 .rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp: .rcc/qmlcache/RobotDemoQt_qml_loader_file_list.rsp
 .rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp: .rcc/qmake_RobotDemoQt.qrc
 .rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp: .rcc/RobotDemoQt_raw_qml_0.qrc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating .rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp"
-	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/qmlcachegen --resource-name qmlcache_RobotDemoQt -o /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp @/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qml_loader_file_list.rsp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating .rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp"
+	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/qmlcachegen --resource-name qmlcache_RobotDemoQt -o /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp @/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qml_loader_file_list.rsp
 
 .rcc/qmlcache/RobotDemoQt_main_qml.cpp: /home/ubuntu/Qt/6.6.3/gcc_64/libexec/qmlcachegen
-.rcc/qmlcache/RobotDemoQt_main_qml.cpp: /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.qml
+.rcc/qmlcache/RobotDemoQt_main_qml.cpp: /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.qml
 .rcc/qmlcache/RobotDemoQt_main_qml.cpp: .rcc/qmake_RobotDemoQt.qrc
 .rcc/qmlcache/RobotDemoQt_main_qml.cpp: .rcc/RobotDemoQt_raw_qml_0.qrc
 .rcc/qmlcache/RobotDemoQt_main_qml.cpp: RobotDemoQt/RobotDemoQt.qmltypes
 .rcc/qmlcache/RobotDemoQt_main_qml.cpp: RobotDemoQt/qmldir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating .rcc/qmlcache/RobotDemoQt_main_qml.cpp"
-	/usr/local/bin/cmake -E make_directory /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache
-	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/qmlcachegen --bare --resource-path /RobotDemoQt/main.qml -I /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build -I /home/ubuntu/Qt/6.6.3/gcc_64/./qml -i /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt/qmldir --resource /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmake_RobotDemoQt.qrc --resource /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/RobotDemoQt_raw_qml_0.qrc -o /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.qml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating .rcc/qmlcache/RobotDemoQt_main_qml.cpp"
+	/usr/local/bin/cmake -E make_directory /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache
+	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/qmlcachegen --bare --resource-path /RobotDemoQt/main.qml -I /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build -I /home/ubuntu/Qt/6.6.3/gcc_64/./qml -i /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt/qmldir --resource /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmake_RobotDemoQt.qrc --resource /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/RobotDemoQt_raw_qml_0.qrc -o /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.qml
 
-.rcc/qrc_RobotDemoQt_raw_qml_0.cpp: /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.qml
+.rcc/qrc_RobotDemoQt_raw_qml_0.cpp: /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.qml
 .rcc/qrc_RobotDemoQt_raw_qml_0.cpp: .rcc/RobotDemoQt_raw_qml_0.qrc
 .rcc/qrc_RobotDemoQt_raw_qml_0.cpp: /home/ubuntu/Qt/6.6.3/gcc_64/./libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Running rcc for resource RobotDemoQt_raw_qml_0"
-	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/rcc --output /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp --name RobotDemoQt_raw_qml_0 /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/RobotDemoQt_raw_qml_0.qrc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Running rcc for resource RobotDemoQt_raw_qml_0"
+	/home/ubuntu/Qt/6.6.3/gcc_64/libexec/rcc --output /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp --name RobotDemoQt_raw_qml_0 /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/RobotDemoQt_raw_qml_0.qrc
 
 RobotDemoQt_autogen/timestamp: /home/ubuntu/Qt/6.6.3/gcc_64/./libexec/moc
 RobotDemoQt_autogen/timestamp: CMakeFiles/RobotDemoQt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Automatic MOC and UIC for target RobotDemoQt"
-	/usr/local/bin/cmake -E cmake_autogen /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen.dir/AutogenInfo.json RelWithDebInfo
-	/usr/local/bin/cmake -E touch /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Automatic MOC and UIC for target RobotDemoQt"
+	/usr/local/bin/cmake -E cmake_autogen /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt_autogen.dir/AutogenInfo.json RelWithDebInfo
+	/usr/local/bin/cmake -E touch /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/timestamp
 
 meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json: meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json"
 	/usr/local/bin/cmake -E true
 
 CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.o: CMakeFiles/RobotDemoQt.dir/flags.make
 CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.o: RobotDemoQt_autogen/mocs_compilation.cpp
 CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.o: CMakeFiles/RobotDemoQt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.o -MF CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.o -c /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.o -MF CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.o -c /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/mocs_compilation.cpp
 
 CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/mocs_compilation.cpp > CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/mocs_compilation.cpp > CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/mocs_compilation.cpp -o CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/RobotDemoQt_autogen/mocs_compilation.cpp -o CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/RobotDemoQt.dir/main.cpp.o: CMakeFiles/RobotDemoQt.dir/flags.make
-CMakeFiles/RobotDemoQt.dir/main.cpp.o: /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.cpp
+CMakeFiles/RobotDemoQt.dir/main.cpp.o: /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.cpp
 CMakeFiles/RobotDemoQt.dir/main.cpp.o: CMakeFiles/RobotDemoQt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RobotDemoQt.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/main.cpp.o -MF CMakeFiles/RobotDemoQt.dir/main.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/main.cpp.o -c /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RobotDemoQt.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/main.cpp.o -MF CMakeFiles/RobotDemoQt.dir/main.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/main.cpp.o -c /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.cpp
 
 CMakeFiles/RobotDemoQt.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RobotDemoQt.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.cpp > CMakeFiles/RobotDemoQt.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.cpp > CMakeFiles/RobotDemoQt.dir/main.cpp.i
 
 CMakeFiles/RobotDemoQt.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RobotDemoQt.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.cpp -o CMakeFiles/RobotDemoQt.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/main.cpp -o CMakeFiles/RobotDemoQt.dir/main.cpp.s
 
 CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o: CMakeFiles/RobotDemoQt.dir/flags.make
 CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o: robotdemoqt_qmltyperegistrations.cpp
 CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o: CMakeFiles/RobotDemoQt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o -MF CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o -c /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o -MF CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o -c /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp
 
 CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp > CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp > CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.i
 
 CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp -o CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/robotdemoqt_qmltyperegistrations.cpp -o CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.s
 
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.o: CMakeFiles/RobotDemoQt.dir/flags.make
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.o: .rcc/qrc_qmake_RobotDemoQt.cpp
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.o: CMakeFiles/RobotDemoQt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.o -MF CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.o -c /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_qmake_RobotDemoQt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.o -MF CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.o -c /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_qmake_RobotDemoQt.cpp
 
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_qmake_RobotDemoQt.cpp > CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_qmake_RobotDemoQt.cpp > CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.i
 
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_qmake_RobotDemoQt.cpp -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_qmake_RobotDemoQt.cpp -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.s
 
 CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o: CMakeFiles/RobotDemoQt.dir/flags.make
-CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o: /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.cpp
+CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o: /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.cpp
 CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o: CMakeFiles/RobotDemoQt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o -MF CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o -c /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o -MF CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o -c /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.cpp
 
 CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.cpp > CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.cpp > CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.i
 
 CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.cpp -o CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/SDKCaller.cpp -o CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.s
 
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.o: CMakeFiles/RobotDemoQt.dir/flags.make
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.o: .rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.o: CMakeFiles/RobotDemoQt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.o -MF CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.o -c /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.o -MF CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.o -c /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp
 
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp > CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp > CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.i
 
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.s
 
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.o: CMakeFiles/RobotDemoQt.dir/flags.make
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.o: .rcc/qmlcache/RobotDemoQt_main_qml.cpp
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.o: CMakeFiles/RobotDemoQt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.o -MF CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.o -c /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.o -MF CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.o -c /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp
 
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp > CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp > CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.i
 
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.s
 
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.o: CMakeFiles/RobotDemoQt.dir/flags.make
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.o: .rcc/qrc_RobotDemoQt_raw_qml_0.cpp
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.o: CMakeFiles/RobotDemoQt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.o -MF CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.o -c /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.o -MF CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.o.d -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.o -c /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp
 
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp > CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp > CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.i
 
 CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp -o CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.s
 
 # Object files for target RobotDemoQt
 RobotDemoQt_OBJECTS = \
@@ -258,30 +258,30 @@ RobotDemoQt_OBJECTS = \
 # External object files for target RobotDemoQt
 RobotDemoQt_EXTERNAL_OBJECTS =
 
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.o
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/main.cpp.o
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.o
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.o
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.o
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.o
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/build.make
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6Quick.so.6.6.3
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6QmlModels.so.6.6.3
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6Qml.so.6.6.3
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6Network.so.6.6.3
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6OpenGL.so.6.6.3
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6Gui.so.6.6.3
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /usr/lib/x86_64-linux-gnu/libGLX.so
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /usr/lib/x86_64-linux-gnu/libOpenGL.so
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6Core.so.6.6.3
-/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt"
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/RobotDemoQt_autogen/mocs_compilation.cpp.o
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/main.cpp.o
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/robotdemoqt_qmltyperegistrations.cpp.o
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_qmake_RobotDemoQt.cpp.o
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/SDKCaller.cpp.o
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_qmlcache_loader.cpp.o
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/build/.rcc/qmlcache/RobotDemoQt_main_qml.cpp.o
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/build/.rcc/qrc_RobotDemoQt_raw_qml_0.cpp.o
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/build.make
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6Quick.so.6.6.3
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6QmlModels.so.6.6.3
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6Qml.so.6.6.3
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6Network.so.6.6.3
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6OpenGL.so.6.6.3
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6Gui.so.6.6.3
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /usr/lib/x86_64-linux-gnu/libGLX.so
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: /home/ubuntu/Qt/6.6.3/gcc_64/lib/libQt6Core.so.6.6.3
+/home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt: CMakeFiles/RobotDemoQt.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable /home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RobotDemoQt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/RobotDemoQt.dir/build: /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt
+CMakeFiles/RobotDemoQt.dir/build: /home/ubuntu/XenseVR-PC-Service/RoboticsService/Redistributable/linux/RobotDemoQt
 .PHONY : CMakeFiles/RobotDemoQt.dir/build
 
 CMakeFiles/RobotDemoQt.dir/clean:
@@ -297,6 +297,6 @@ CMakeFiles/RobotDemoQt.dir/depend: RobotDemoQt_autogen/timestamp
 CMakeFiles/RobotDemoQt.dir/depend: meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json
 CMakeFiles/RobotDemoQt.dir/depend: meta_types/qt6robotdemoqt_relwithdebinfo_metatypes.json.gen
 CMakeFiles/RobotDemoQt.dir/depend: robotdemoqt_qmltyperegistrations.cpp
-	cd /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XRoboToolkit-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build /home/ubuntu/XenseVR-PC-Service/RoboticsService/SDKDemo/CppSrc/RobotDemoQt/build/CMakeFiles/RobotDemoQt.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/RobotDemoQt.dir/depend
 

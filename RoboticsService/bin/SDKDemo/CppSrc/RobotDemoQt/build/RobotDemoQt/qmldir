@@ -1,4 +1,0 @@
-module RobotDemoQt
-typeinfo RobotDemoQt.qmltypes
-prefer :/RobotDemoQt/
-
