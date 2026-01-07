@@ -291,12 +291,12 @@ if(UNIX)
         target_compile_definitions(PXREARobotSDK PUBLIC
             LINUX_aarch64
         )
-        target_link_directories(PXREARobotSDK PUBLIC ${PROJECT_SOURCE_DIR}/../Redistributable/linux_aarch64/grpc/lib)
+        set(GRPC_LIB_DIR ${PROJECT_SOURCE_DIR}/../Redistributable/linux_aarch64/grpc/lib)
     else()
         target_compile_definitions(PXREARobotSDK PUBLIC
             LINUX_x86
         )
-        target_link_directories(PXREARobotSDK PUBLIC ${PROJECT_SOURCE_DIR}/../Redistributable/linux/grpc/lib)
+        set(GRPC_LIB_DIR ${PROJECT_SOURCE_DIR}/../Redistributable/linux/grpc/lib)
     endif()
     set(CMAKE_CXX_STANDARD 17)
 
@@ -304,120 +304,118 @@ if(UNIX)
 
     set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,--no-undefined")
 
-
+    # Use absolute paths to avoid linking against conda environment libraries
     target_link_libraries(PXREARobotSDK PUBLIC
-        # Remove: L${CMAKE_CURRENT_SOURCE_DIR}/../bin/
-        # Remove: L${CMAKE_CURRENT_SOURCE_DIR}/../bin/ByteRTC/
         -Wl,--start-group
-        libabsl_bad_any_cast_impl.a
-        libabsl_bad_optional_access.a
-        libabsl_bad_variant_access.a
-        libabsl_base.a
-        libabsl_city.a
-        libabsl_civil_time.a
-        libabsl_cord.a
-        libabsl_cord_internal.a
-        libabsl_cordz_functions.a
-        libabsl_cordz_handle.a
-        libabsl_cordz_info.a
-        libabsl_cordz_sample_token.a
-        libabsl_crc32c.a
-        libabsl_crc_cord_state.a
-        libabsl_crc_cpu_detect.a
-        libabsl_crc_internal.a
-        libabsl_debugging_internal.a
-        libabsl_demangle_internal.a
-        libabsl_die_if_null.a
-        libabsl_examine_stack.a
-        libabsl_exponential_biased.a
-        libabsl_failure_signal_handler.a
-        libabsl_flags_commandlineflag.a
-        libabsl_flags_commandlineflag_internal.a
-        libabsl_flags_config.a
-        libabsl_flags_internal.a
-        libabsl_flags_marshalling.a
-        libabsl_flags_parse.a
-        libabsl_flags_private_handle_accessor.a
-        libabsl_flags_program_name.a
-        libabsl_flags_reflection.a
-        libabsl_flags_usage.a
-        libabsl_flags_usage_internal.a
-        libabsl_graphcycles_internal.a
-        libabsl_hash.a
-        libabsl_hashtablez_sampler.a
-        libabsl_int128.a
-        libabsl_kernel_timeout_internal.a
-        libabsl_leak_check.a
-        libabsl_log_entry.a
-        libabsl_log_flags.a
-        libabsl_log_globals.a
-        libabsl_log_initialize.a
-        libabsl_log_internal_check_op.a
-        libabsl_log_internal_conditions.a
-        libabsl_log_internal_fnmatch.a
-        libabsl_log_internal_format.a
-        libabsl_log_internal_globals.a
-        libabsl_log_internal_log_sink_set.a
-        libabsl_log_internal_message.a
-        libabsl_log_internal_nullguard.a
-        libabsl_log_internal_proto.a
-        libabsl_log_severity.a
-        libabsl_log_sink.a
-        libabsl_low_level_hash.a
-        libabsl_malloc_internal.a
-        libabsl_periodic_sampler.a
-        libabsl_random_distributions.a
-        libabsl_random_internal_distribution_test_util.a
-        libabsl_random_internal_platform.a
-        libabsl_random_internal_pool_urbg.a
-        libabsl_random_internal_randen.a
-        libabsl_random_internal_randen_hwaes.a
-        libabsl_random_internal_randen_hwaes_impl.a
-        libabsl_random_internal_randen_slow.a
-        libabsl_random_internal_seed_material.a
-        libabsl_random_seed_gen_exception.a
-        libabsl_random_seed_sequences.a
-        libabsl_raw_hash_set.a
-        libabsl_raw_logging_internal.a
-        libabsl_scoped_set_env.a
-        libabsl_spinlock_wait.a
-        libabsl_stacktrace.a
-        libabsl_status.a
-        libabsl_statusor.a
-        libabsl_strerror.a
-        libabsl_str_format_internal.a
-        libabsl_strings.a
-        libabsl_strings_internal.a
-        libabsl_string_view.a
-        libabsl_symbolize.a
-        libabsl_synchronization.a
-        libabsl_throw_delegate.a
-        libabsl_time.a
-        libabsl_time_zone.a
-        libabsl_vlog_config_internal.a
-        libaddress_sorting.a
-        libcares.a
-        libcrypto.a
-        libgpr.a
-        libgrpc++.a
-        libgrpc.a
-        libgrpc++_alts.a
-        libgrpc_authorization_provider.a
-        libgrpc++_error_details.a
-        libgrpc_plugin_support.a
-        libgrpcpp_channelz.a
-        libgrpc++_reflection.a
-        libgrpc++_unsecure.a
-        libgrpc_unsecure.a
-        libprotobuf.a
-        libprotobuf-lite.a
-        libprotoc.a
-        libre2.a
-        libssl.a
-        libupb.a
-        libutf8_range.a
-        libutf8_validity.a
-        libz.a
+        ${GRPC_LIB_DIR}/libabsl_bad_any_cast_impl.a
+        ${GRPC_LIB_DIR}/libabsl_bad_optional_access.a
+        ${GRPC_LIB_DIR}/libabsl_bad_variant_access.a
+        ${GRPC_LIB_DIR}/libabsl_base.a
+        ${GRPC_LIB_DIR}/libabsl_city.a
+        ${GRPC_LIB_DIR}/libabsl_civil_time.a
+        ${GRPC_LIB_DIR}/libabsl_cord.a
+        ${GRPC_LIB_DIR}/libabsl_cord_internal.a
+        ${GRPC_LIB_DIR}/libabsl_cordz_functions.a
+        ${GRPC_LIB_DIR}/libabsl_cordz_handle.a
+        ${GRPC_LIB_DIR}/libabsl_cordz_info.a
+        ${GRPC_LIB_DIR}/libabsl_cordz_sample_token.a
+        ${GRPC_LIB_DIR}/libabsl_crc32c.a
+        ${GRPC_LIB_DIR}/libabsl_crc_cord_state.a
+        ${GRPC_LIB_DIR}/libabsl_crc_cpu_detect.a
+        ${GRPC_LIB_DIR}/libabsl_crc_internal.a
+        ${GRPC_LIB_DIR}/libabsl_debugging_internal.a
+        ${GRPC_LIB_DIR}/libabsl_demangle_internal.a
+        ${GRPC_LIB_DIR}/libabsl_die_if_null.a
+        ${GRPC_LIB_DIR}/libabsl_examine_stack.a
+        ${GRPC_LIB_DIR}/libabsl_exponential_biased.a
+        ${GRPC_LIB_DIR}/libabsl_failure_signal_handler.a
+        ${GRPC_LIB_DIR}/libabsl_flags_commandlineflag.a
+        ${GRPC_LIB_DIR}/libabsl_flags_commandlineflag_internal.a
+        ${GRPC_LIB_DIR}/libabsl_flags_config.a
+        ${GRPC_LIB_DIR}/libabsl_flags_internal.a
+        ${GRPC_LIB_DIR}/libabsl_flags_marshalling.a
+        ${GRPC_LIB_DIR}/libabsl_flags_parse.a
+        ${GRPC_LIB_DIR}/libabsl_flags_private_handle_accessor.a
+        ${GRPC_LIB_DIR}/libabsl_flags_program_name.a
+        ${GRPC_LIB_DIR}/libabsl_flags_reflection.a
+        ${GRPC_LIB_DIR}/libabsl_flags_usage.a
+        ${GRPC_LIB_DIR}/libabsl_flags_usage_internal.a
+        ${GRPC_LIB_DIR}/libabsl_graphcycles_internal.a
+        ${GRPC_LIB_DIR}/libabsl_hash.a
+        ${GRPC_LIB_DIR}/libabsl_hashtablez_sampler.a
+        ${GRPC_LIB_DIR}/libabsl_int128.a
+        ${GRPC_LIB_DIR}/libabsl_kernel_timeout_internal.a
+        ${GRPC_LIB_DIR}/libabsl_leak_check.a
+        ${GRPC_LIB_DIR}/libabsl_log_entry.a
+        ${GRPC_LIB_DIR}/libabsl_log_flags.a
+        ${GRPC_LIB_DIR}/libabsl_log_globals.a
+        ${GRPC_LIB_DIR}/libabsl_log_initialize.a
+        ${GRPC_LIB_DIR}/libabsl_log_internal_check_op.a
+        ${GRPC_LIB_DIR}/libabsl_log_internal_conditions.a
+        ${GRPC_LIB_DIR}/libabsl_log_internal_fnmatch.a
+        ${GRPC_LIB_DIR}/libabsl_log_internal_format.a
+        ${GRPC_LIB_DIR}/libabsl_log_internal_globals.a
+        ${GRPC_LIB_DIR}/libabsl_log_internal_log_sink_set.a
+        ${GRPC_LIB_DIR}/libabsl_log_internal_message.a
+        ${GRPC_LIB_DIR}/libabsl_log_internal_nullguard.a
+        ${GRPC_LIB_DIR}/libabsl_log_internal_proto.a
+        ${GRPC_LIB_DIR}/libabsl_log_severity.a
+        ${GRPC_LIB_DIR}/libabsl_log_sink.a
+        ${GRPC_LIB_DIR}/libabsl_low_level_hash.a
+        ${GRPC_LIB_DIR}/libabsl_malloc_internal.a
+        ${GRPC_LIB_DIR}/libabsl_periodic_sampler.a
+        ${GRPC_LIB_DIR}/libabsl_random_distributions.a
+        ${GRPC_LIB_DIR}/libabsl_random_internal_distribution_test_util.a
+        ${GRPC_LIB_DIR}/libabsl_random_internal_platform.a
+        ${GRPC_LIB_DIR}/libabsl_random_internal_pool_urbg.a
+        ${GRPC_LIB_DIR}/libabsl_random_internal_randen.a
+        ${GRPC_LIB_DIR}/libabsl_random_internal_randen_hwaes.a
+        ${GRPC_LIB_DIR}/libabsl_random_internal_randen_hwaes_impl.a
+        ${GRPC_LIB_DIR}/libabsl_random_internal_randen_slow.a
+        ${GRPC_LIB_DIR}/libabsl_random_internal_seed_material.a
+        ${GRPC_LIB_DIR}/libabsl_random_seed_gen_exception.a
+        ${GRPC_LIB_DIR}/libabsl_random_seed_sequences.a
+        ${GRPC_LIB_DIR}/libabsl_raw_hash_set.a
+        ${GRPC_LIB_DIR}/libabsl_raw_logging_internal.a
+        ${GRPC_LIB_DIR}/libabsl_scoped_set_env.a
+        ${GRPC_LIB_DIR}/libabsl_spinlock_wait.a
+        ${GRPC_LIB_DIR}/libabsl_stacktrace.a
+        ${GRPC_LIB_DIR}/libabsl_status.a
+        ${GRPC_LIB_DIR}/libabsl_statusor.a
+        ${GRPC_LIB_DIR}/libabsl_strerror.a
+        ${GRPC_LIB_DIR}/libabsl_str_format_internal.a
+        ${GRPC_LIB_DIR}/libabsl_strings.a
+        ${GRPC_LIB_DIR}/libabsl_strings_internal.a
+        ${GRPC_LIB_DIR}/libabsl_string_view.a
+        ${GRPC_LIB_DIR}/libabsl_symbolize.a
+        ${GRPC_LIB_DIR}/libabsl_synchronization.a
+        ${GRPC_LIB_DIR}/libabsl_throw_delegate.a
+        ${GRPC_LIB_DIR}/libabsl_time.a
+        ${GRPC_LIB_DIR}/libabsl_time_zone.a
+        ${GRPC_LIB_DIR}/libabsl_vlog_config_internal.a
+        ${GRPC_LIB_DIR}/libaddress_sorting.a
+        ${GRPC_LIB_DIR}/libcares.a
+        ${GRPC_LIB_DIR}/libcrypto.a
+        ${GRPC_LIB_DIR}/libgpr.a
+        ${GRPC_LIB_DIR}/libgrpc++.a
+        ${GRPC_LIB_DIR}/libgrpc.a
+        ${GRPC_LIB_DIR}/libgrpc++_alts.a
+        ${GRPC_LIB_DIR}/libgrpc_authorization_provider.a
+        ${GRPC_LIB_DIR}/libgrpc++_error_details.a
+        ${GRPC_LIB_DIR}/libgrpc_plugin_support.a
+        ${GRPC_LIB_DIR}/libgrpcpp_channelz.a
+        ${GRPC_LIB_DIR}/libgrpc++_reflection.a
+        ${GRPC_LIB_DIR}/libgrpc++_unsecure.a
+        ${GRPC_LIB_DIR}/libgrpc_unsecure.a
+        ${GRPC_LIB_DIR}/libprotobuf.a
+        ${GRPC_LIB_DIR}/libprotobuf-lite.a
+        ${GRPC_LIB_DIR}/libprotoc.a
+        ${GRPC_LIB_DIR}/libre2.a
+        ${GRPC_LIB_DIR}/libssl.a
+        ${GRPC_LIB_DIR}/libupb.a
+        ${GRPC_LIB_DIR}/libutf8_range.a
+        ${GRPC_LIB_DIR}/libutf8_validity.a
+        ${GRPC_LIB_DIR}/libz.a
         -Wl,--end-group
         rt
         pthread
