@@ -1,2 +1,4 @@
-*.so
-*.so.*
+# Compiled SDK binary (recompiled locally, not version-controlled)
+RoboticsService/SDK/linux/64/libPXREARobotSDK.so
+RoboticsService/SDK/linux_aarch64/64/libPXREARobotSDK.so
+RoboticsService/PXREARobotSDK/build/
