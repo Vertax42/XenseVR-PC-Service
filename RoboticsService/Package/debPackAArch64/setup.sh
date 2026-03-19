@@ -67,7 +67,7 @@ if [ ! -d "$DIR/package_arm64/usr/share/icons/hicolor" ] || [ "$DIR/hicolor" -nt
 fi
 
 # 检查脚本文件是否已复制或有更新
-for script in run2D.sh runRobotDataRecorder.sh runService.sh RobotDemoQt RobotDataRecorder; do
+for script in run2D.sh runRobotDataRecorder.sh runService.sh; do
     if [ ! -f "$DIR/package_arm64/opt/apps/roboticsservice/$script" ] || [ "$DIR/$script" -nt "$DIR/package_arm64/opt/apps/roboticsservice/$script" ]; then
         echo "复制/更新 $script..."
         cp $DIR/$script $DIR/package_arm64/opt/apps/roboticsservice/
@@ -80,6 +80,18 @@ done
 # 检查二进制文件是否需要更新
 BIN_DIR="$DIR/../../bin"
 TARGET_DIR="$DIR/package_arm64/opt/apps/roboticsservice"
+
+if [ ! -d "$BIN_DIR" ]; then
+    echo "错误：未找到构建输出目录 $BIN_DIR"
+    echo "请先执行 RoboticsService/qt-gcc_aarch64.sh 完成 ARM64 构建。"
+    exit 1
+fi
+
+if [ ! -f "$BIN_DIR/RoboticsServiceProcess" ]; then
+    echo "错误：未找到 $BIN_DIR/RoboticsServiceProcess"
+    echo "当前无法生成可用的 ARM64 Debian 包。"
+    exit 1
+fi
 
 # 始终复制二进制文件，确保包含最新的可执行文件
 echo "复制二进制文件..."
@@ -99,11 +111,63 @@ echo "二进制文件已复制。"
 
 # 构建 Debian 包
 echo "构建 Debian 包..."
-VERSION=$(grep "Version:" $DIR/control | cut -d " " -f 2)
+VERSION=$(grep "^Version:" "$DIR/control" | awk '{print $2}')
 PACKAGE_NAME="XenseVR-PC-Service_${VERSION}_arm64.deb"
+PACKAGE_PATH="$DIR/$PACKAGE_NAME"
+MANUAL_TMP_DIR="$DIR/.deb_build_tmp"
 
-cd $DIR
-dpkg-deb -b package_arm64/ ./$PACKAGE_NAME
+validate_deb_package() {
+    local package_path="$1"
+
+    if [ ! -f "$package_path" ]; then
+        return 1
+    fi
+
+    local archive_listing
+    archive_listing=$(ar t "$package_path" 2>/dev/null) || return 1
+    echo "$archive_listing" | grep -q "^debian-binary$" || return 1
+    echo "$archive_listing" | grep -q "^control\.tar\." || return 1
+    echo "$archive_listing" | grep -q "^data\.tar\." || return 1
+
+    timeout 10 dpkg-deb -I "$package_path" >/dev/null 2>&1 || return 1
+    timeout 10 dpkg-deb -c "$package_path" >/dev/null 2>&1 || return 1
+
+    return 0
+}
+
+build_deb_manually() {
+    local package_path="$1"
+
+    echo "使用 tar + ar 手动构建 Debian 包..."
+    rm -rf "$MANUAL_TMP_DIR"
+    mkdir -p "$MANUAL_TMP_DIR"
+
+    printf '2.0\n' > "$MANUAL_TMP_DIR/debian-binary"
+    tar --zstd --owner=0 --group=0 --numeric-owner \
+        -cf "$MANUAL_TMP_DIR/control.tar.zst" \
+        -C "$DIR/package_arm64/DEBIAN" .
+    tar --zstd --owner=0 --group=0 --numeric-owner \
+        --exclude=./DEBIAN \
+        -cf "$MANUAL_TMP_DIR/data.tar.zst" \
+        -C "$DIR/package_arm64" .
+
+    rm -f "$package_path"
+    ar r "$package_path" \
+        "$MANUAL_TMP_DIR/debian-binary" \
+        "$MANUAL_TMP_DIR/control.tar.zst" \
+        "$MANUAL_TMP_DIR/data.tar.zst"
+}
+
+rm -f "$PACKAGE_PATH"
+cd "$DIR"
+
+build_deb_manually "$PACKAGE_PATH"
+
+if ! validate_deb_package "$PACKAGE_PATH"; then
+    echo "错误：Debian 包构建失败，产物校验未通过。"
+    exit 1
+fi
+
 echo "Debian 包已构建: $PACKAGE_NAME"
 
 # 确保输出目录存在
@@ -111,11 +175,12 @@ mkdir -p $DIR/../output
 
 # 复制 Debian 包到输出目录
 echo "复制包到输出目录..."
-cp ./$PACKAGE_NAME $DIR/../output/
+cp "$PACKAGE_PATH" "$DIR/../output/"
 echo "包已复制到输出目录。"
 
 # 清理临时文件
-rm ./$PACKAGE_NAME
+rm -f "$PACKAGE_PATH"
+rm -rf "$MANUAL_TMP_DIR"
 echo "临时文件已清理。"
 
 echo "ARM64架构的增量包构建已成功完成。"

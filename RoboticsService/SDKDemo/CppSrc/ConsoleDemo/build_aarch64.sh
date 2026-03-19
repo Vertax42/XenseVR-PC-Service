@@ -1,18 +1,14 @@
 #!/bin/bash
 
-echo "Setting up Qt environment for ARM64..."
-QT_GCC_ARM64=/media/bytedance/newSpace/Qt6
-export QT6_TOOLS=/media/bytedance/newSpace/Qt/Tools
-
-export PATH=/media/bytedance/newSpace/Qt6/bin:$PATH
-export PATH=/media/bytedance/newSpace/Qt6/include:$PATH
-export PATH=/media/bytedance/newSpace/Qt/Tools/QtCreator/bin:$PATH
-export PATH=/media/bytedance/newSpace/Qt/Tools/CMake/bin:$PATH
-
 # Get the directory of the script
 DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 cd $DIR
 echo "Working directory: $DIR"
+
+echo "Setting up Qt environment for ARM64..."
+# shellcheck source=../../../qt-env-aarch64.sh
+source "$DIR/../../../qt-env-aarch64.sh"
+setup_qt_arm64_env || exit 1
 
 # Create build directory if it doesn't exist
 BUILD_DIR="$DIR/build"

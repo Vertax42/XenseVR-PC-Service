@@ -24,6 +24,18 @@ endif()
 
 set(EXECUTABLE_OUTPUT_PATH ${INSTALL_DIR})
 
+macro(copy_runtime_glob target destination)
+    foreach(_pattern ${ARGN})
+        file(GLOB _runtime_matches "${_pattern}")
+        foreach(_runtime_match IN LISTS _runtime_matches)
+            add_custom_command(TARGET ${target}
+                POST_BUILD
+                COMMAND ${CMAKE_COMMAND} -E copy_if_different "${_runtime_match}" "${destination}"
+            )
+        endforeach()
+    endforeach()
+endmacro()
+
 
 find_package(Qt6 REQUIRED COMPONENTS Core Network)
 find_package(Qt6 REQUIRED COMPONENTS Core5Compat)
@@ -185,32 +197,6 @@ if(UNIX)
 
 
                           COMMAND ${CMAKE_COMMAND} -E make_directory "${INSTALL_DIR}/lib"
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6Core.so" "${INSTALL_DIR}/lib"
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6Core.so.6" "${INSTALL_DIR}/lib"
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6Core.so.6.6.2" "${INSTALL_DIR}/lib"
-
-
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6Core5Compat.so" "${INSTALL_DIR}/lib"
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6Core5Compat.so.6" "${INSTALL_DIR}/lib"
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6Core5Compat.so.6.6.2" "${INSTALL_DIR}/lib"
-
-
-
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6DBus.so" "${INSTALL_DIR}/lib"
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6DBus.so.6" "${INSTALL_DIR}/lib"
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6DBus.so.6.6.2" "${INSTALL_DIR}/lib"
-
-
-
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6Network.so" "${INSTALL_DIR}/lib"
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6Network.so.6" "${INSTALL_DIR}/lib"
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6Network.so.6.6.2" "${INSTALL_DIR}/lib"
-
-
-
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6Sql.so" "${INSTALL_DIR}/lib"
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6Sql.so.6" "${INSTALL_DIR}/lib"
-                          COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_PREFIX_PATH}/lib/libQt6Sql.so.6.6.2" "${INSTALL_DIR}/lib"
 
 
                           COMMAND ${CMAKE_COMMAND} -E make_directory "${INSTALL_DIR}/translations"
@@ -232,6 +218,19 @@ if(UNIX)
                           COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_PREFIX_PATH}/plugins/tls" "${INSTALL_DIR}/plugins/tls"
 
                       )
+
+                     copy_runtime_glob(RoboticsServiceProcess "${INSTALL_DIR}/lib"
+                          "${CMAKE_PREFIX_PATH}/lib/libQt6Core.so*"
+                          "${CMAKE_PREFIX_PATH}/lib/libQt6Core5Compat.so*"
+                          "${CMAKE_PREFIX_PATH}/lib/libQt6DBus.so*"
+                          "${CMAKE_PREFIX_PATH}/lib/libQt6Gui.so*"
+                          "${CMAKE_PREFIX_PATH}/lib/libQt6Network.so*"
+                          "${CMAKE_PREFIX_PATH}/lib/libQt6Qml.so*"
+                          "${CMAKE_PREFIX_PATH}/lib/libQt6Sql.so*"
+                          "${CMAKE_PREFIX_PATH}/lib/libicudata.so*"
+                          "${CMAKE_PREFIX_PATH}/lib/libicui18n.so*"
+                          "${CMAKE_PREFIX_PATH}/lib/libicuuc.so*"
+                     )
                  endif()
 
              else()
@@ -476,6 +475,5 @@ if(UNIX)
              endif()
 endif()
 endif()
-
 
 

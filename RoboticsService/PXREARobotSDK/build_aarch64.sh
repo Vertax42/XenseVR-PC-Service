@@ -34,14 +34,14 @@ echo "Working directory: $DIR"
 
 # Setting up Qt environment for ARM64
 echo "Setting up Qt environment for ARM64..."
-QT_PATH=/media/bytedance/newSpace/Qt6
-export PATH=$QT_PATH/bin:$PATH
-export PATH=$QT_PATH/include:$PATH
-export PATH=/media/bytedance/newSpace/Qt/Tools/QtCreator/bin:$PATH
-export PATH=/media/bytedance/newSpace/Qt/Tools/CMake/bin:$PATH
+# shellcheck source=../qt-env-aarch64.sh
+source "$DIR/../qt-env-aarch64.sh"
+setup_qt_arm64_env || exit 1
+QT_PATH=$QT_GCC_ARM64
 
-# Set SDK installation directory for ARM64
-SDK_INSTALL_DIR="$DIR/../Redistributable/linux_aarch64/SDK/clientso/64"
+# Set SDK installation directories for ARM64
+SDK_INSTALL_DIR="$DIR/../SDK/linux_aarch64/64"
+REDIST_SDK_INSTALL_DIR="$DIR/../Redistributable/linux_aarch64/SDK/clientso/64"
 
 # Create build directory
 BUILD_DIR="$DIR/build"
@@ -69,16 +69,22 @@ cmake --build $BUILD_DIR --config $BUILD_TYPE
 if [ $? -eq 0 ]; then
     echo "Build successful!"
     
-    # Create SDK directory if it doesn't exist
+    # Create SDK directories if they don't exist
     if [ ! -d "$SDK_INSTALL_DIR" ]; then
         echo "Creating SDK installation directory..."
         mkdir -p $SDK_INSTALL_DIR
     fi
+    if [ ! -d "$REDIST_SDK_INSTALL_DIR" ]; then
+        echo "Creating redistributable SDK installation directory..."
+        mkdir -p $REDIST_SDK_INSTALL_DIR
+    fi
     
-    # Copy library and header to SDK directory
-    echo "Copying library and header to SDK directory..."
+    # Copy library and header to SDK directories
+    echo "Copying library and header to SDK directories..."
     cp $BUILD_DIR/libPXREARobotSDK.so $SDK_INSTALL_DIR/
     cp $DIR/PXREARobotSDK.h $SDK_INSTALL_DIR/
+    cp $BUILD_DIR/libPXREARobotSDK.so $REDIST_SDK_INSTALL_DIR/
+    cp $DIR/PXREARobotSDK.h $REDIST_SDK_INSTALL_DIR/
     
     # Create SDK include directory if it doesn't exist
     SDK_INCLUDE_DIR="$DIR/../SDK/include"
@@ -94,6 +100,8 @@ if [ $? -eq 0 ]; then
     echo "Installation completed. Files installed to:"
     echo "- $SDK_INSTALL_DIR/libPXREARobotSDK.so"
     echo "- $SDK_INSTALL_DIR/PXREARobotSDK.h"
+    echo "- $REDIST_SDK_INSTALL_DIR/libPXREARobotSDK.so"
+    echo "- $REDIST_SDK_INSTALL_DIR/PXREARobotSDK.h"
     echo "- $SDK_INCLUDE_DIR/PXREARobotSDK.h"
 else
     echo "Build failed!"

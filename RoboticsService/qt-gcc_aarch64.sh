@@ -25,22 +25,12 @@ if [ "$OVERSEAS_FLAG" = true ]; then
 fi
 
 echo "set qt gcc compile env parameter for ARM64 architecture..."
-################################################################################
-################################################################################
-# Set the path to your Qt installation for ARM64 architecture
-
-QT_GCC_ARM64=/media/bytedance/newSpace/Qt6
-export QT6_TOOLS=/media/bytedance/newSpace/Qt/Tools
-
-export PATH=/media/bytedance/newSpace/Qt6/bin:$PATH
-export PATH=/media/bytedance/newSpace/Qt6/include:$PATH
-export PATH=/media/bytedance/newSpace/Qt/Tools/QtCreator/bin:$PATH
-export PATH=/media/bytedance/newSpace/Qt/Tools/CMake/bin:$PATH
-################################################################################
-################################################################################
-
-echo "set qt gcc compile env parameter finished."
 DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+# shellcheck source=./qt-env-aarch64.sh
+source "$DIR/qt-env-aarch64.sh"
+setup_qt_arm64_env || exit 1
+echo "set qt gcc compile env parameter finished."
+
 cd $DIR
 
 PROJECT_DIR=$DIR
@@ -63,11 +53,11 @@ if [ ! -d "$RELEASE_DIR" ]; then
 fi
 
 # Check Qt version
-echo "Using Qt 6.6.2 from $QT_GCC_ARM64"
-if [ -f "$QT_GCC_ARM64/lib/libQt6Core.so.6.6.2" ]; then
-    echo "Found Qt 6.6.2 libraries"
+QT_CORE_LIB=$(find "$QT_GCC_ARM64/lib" -maxdepth 1 -type f -name 'libQt6Core.so.*' | sort -V | tail -n 1)
+if [ -n "$QT_CORE_LIB" ]; then
+    echo "Found Qt runtime: $(basename "$QT_CORE_LIB")"
 else
-    echo "Warning: Qt 6.6.2 libraries not found at $QT_GCC_ARM64"
+    echo "Warning: Qt runtime libraries not found at $QT_GCC_ARM64"
 fi
 
 # Only configure if CMakeCache.txt doesn't exist or --clean flag is provided

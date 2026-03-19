@@ -21,6 +21,8 @@ if(UNIX)
     endif()
 endif()
 
+file(MAKE_DIRECTORY ${INSTALL_DIR})
+
 add_compile_definitions(_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING)
 
 
@@ -279,9 +281,10 @@ if(WIN32)
 
     add_custom_command(TARGET PXREARobotSDK
         POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_BINARY_DIR}/PXREARobotSDK.lib" ${INSTALL_DIR}
-        COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_BINARY_DIR}/PXREARobotSDK.dll" ${INSTALL_DIR}
-        COMMAND ${CMAKE_COMMAND} -E copy "${PROJECT_SOURCE_DIR}/PXREARobotSDK.h" ${INSTALL_DIR}
+        COMMAND ${CMAKE_COMMAND} -E make_directory "${INSTALL_DIR}"
+        COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_BINARY_DIR}/PXREARobotSDK.lib" "${INSTALL_DIR}/PXREARobotSDK.lib"
+        COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_BINARY_DIR}/PXREARobotSDK.dll" "${INSTALL_DIR}/PXREARobotSDK.dll"
+        COMMAND ${CMAKE_COMMAND} -E copy "${PROJECT_SOURCE_DIR}/PXREARobotSDK.h" "${INSTALL_DIR}/PXREARobotSDK.h"
     )
 endif()
 
@@ -424,7 +427,8 @@ if(UNIX)
 
     add_custom_command(TARGET PXREARobotSDK
         POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_BINARY_DIR}/libPXREARobotSDK.so" ${INSTALL_DIR}
+        COMMAND ${CMAKE_COMMAND} -E make_directory "${INSTALL_DIR}"
+        COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_BINARY_DIR}/libPXREARobotSDK.so" "${INSTALL_DIR}/libPXREARobotSDK.so"
         COMMAND ${CMAKE_COMMAND} -E copy "${PROJECT_SOURCE_DIR}/PXREARobotSDK.h" ${PROJECT_SOURCE_DIR}/../SDK/include/
     )
 endif()
