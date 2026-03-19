@@ -81,6 +81,50 @@ done
 BIN_DIR="$DIR/../../bin"
 TARGET_DIR="$DIR/package_arm64/opt/apps/roboticsservice"
 
+link_if_same() {
+    local link_path="$1"
+    local target_name="$2"
+    local target_path
+
+    target_path="$(dirname "$link_path")/$target_name"
+
+    if [ ! -f "$link_path" ] || [ -L "$link_path" ]; then
+        return 0
+    fi
+
+    if [ ! -f "$target_path" ]; then
+        return 0
+    fi
+
+    if ! cmp -s "$link_path" "$target_path"; then
+        return 0
+    fi
+
+    rm -f "$link_path"
+    ln -s "$target_name" "$link_path"
+}
+
+normalize_shared_library_links() {
+    local root_dir="$1"
+    local versioned_path base_name unversioned soname major_version
+
+    while IFS= read -r versioned_path; do
+        base_name="$(basename "$versioned_path")"
+
+        if [[ "$base_name" =~ ^(.+\.so)\.([0-9]+)(\..+)$ ]]; then
+            unversioned="${BASH_REMATCH[1]}"
+            major_version="${BASH_REMATCH[2]}"
+            soname="${unversioned}.${major_version}"
+
+            link_if_same "$(dirname "$versioned_path")/$soname" "$base_name"
+            link_if_same "$(dirname "$versioned_path")/$unversioned" "$soname"
+        elif [[ "$base_name" =~ ^(.+\.so)\.([0-9]+)$ ]]; then
+            unversioned="${BASH_REMATCH[1]}"
+            link_if_same "$(dirname "$versioned_path")/$unversioned" "$base_name"
+        fi
+    done < <(find "$root_dir" -type f -name '*.so.*' | sort -V)
+}
+
 if [ ! -d "$BIN_DIR" ]; then
     echo "错误：未找到构建输出目录 $BIN_DIR"
     echo "请先执行 RoboticsService/qt-gcc_aarch64.sh 完成 ARM64 构建。"
@@ -108,6 +152,12 @@ else
     echo "警告：在 $BIN_DIR 中未找到主可执行文件 RoboticsServiceProcess！"
 fi
 echo "二进制文件已复制。"
+
+echo "清理非运行时调试插件..."
+find "$TARGET_DIR" -type f -name '*.debug' -delete
+
+echo "标准化共享库符号链接..."
+normalize_shared_library_links "$TARGET_DIR"
 
 # 构建 Debian 包
 echo "构建 Debian 包..."
