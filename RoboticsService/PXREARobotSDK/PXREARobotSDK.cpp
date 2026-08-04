@@ -173,7 +173,12 @@ public:
                         dcm.dataSize = feedBack.devblob().content().size();
                         dcm.dataPtr = feedBack.devblob().content().data();
                         gOnPXREAClientCallback(g_context,PXREADeviceCustomMessage,0,&dcm);
-                        OutputDebug((StreamHelper()<<"device "<<dcm.devID).str().c_str());
+                        // Silenced: this channel now carries Pico camera frames
+                        // (~60/s for two eyes), and OutputDebug is a bare
+                        // `std::cout << str` with no newline on Linux, so it
+                        // shredded the caller's console. Same reason the
+                        // DeviceStateJson print above is commented out.
+                        //OutputDebug((StreamHelper()<<"device "<<dcm.devID).str().c_str());
                     }
                 }
 
