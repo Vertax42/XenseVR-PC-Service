@@ -65,8 +65,8 @@ if [ ! -d "$DIR/package/usr/share/icons/hicolor" ] || [ "$DIR/hicolor" -nt "$DIR
     echo "Icons copied/updated."
 fi
 
-# 检查脚本文件是否已复制或有更新
-for script in run2D.sh runRobotDataRecorder.sh run3D.sh runService.sh RobotDemoQt RobotDataRecorder; do
+# 检查脚本文件是否已复制或有更新。二进制文件统一从 bin 目录同步。
+for script in run2D.sh runRobotDataRecorder.sh run3D.sh runService.sh; do
     if [ ! -f "$DIR/package/opt/apps/roboticsservice/$script" ] || [ "$DIR/$script" -nt "$DIR/package/opt/apps/roboticsservice/$script" ]; then
         echo "Copying/updating $script..."
         cp $DIR/$script $DIR/package/opt/apps/roboticsservice/

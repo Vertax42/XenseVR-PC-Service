@@ -16,13 +16,31 @@ echo "set qt gcc compile env parameter..."
 ################################################################################
 ################################################################################
 # Set the path to your Qt installation for GCC 64-bit architecture
-QT_GCC_64=/home/ubuntu/Qt/6.6.3/gcc_64/
-export QT6_TOOLS=/home/ubuntu/Qt/Tools
+if [ -z "$QT_GCC_64" ]; then
+    for qt_path in \
+        /home/zwg/pro/Qt6/6.6.3/gcc_64 \
+        /home/ubuntu/Qt/6.6.3/gcc_64; do
+        if [ -f "$qt_path/lib/cmake/Qt6/Qt6Config.cmake" ]; then
+            QT_GCC_64=$qt_path
+            break
+        fi
+    done
+fi
 
-export PATH=/home/ubuntu/Qt/6.6.3/gcc_64/bin:$PATH
-export PATH=/home/ubuntu/Qt/6.6.3/gcc_64/include:$PATH
-export PATH=/home/ubuntu/Qt/Tools/QtCreator/bin:$PATH
-export PATH=/home/ubuntu/Qt/Tools/CMake/bin:$PATH
+if [ -z "$QT_GCC_64" ] || [ ! -f "$QT_GCC_64/lib/cmake/Qt6/Qt6Config.cmake" ]; then
+    echo "Qt6 gcc_64 path not found. Set QT_GCC_64 to your Qt installation path."
+    exit 1
+fi
+
+QT_GCC_64=${QT_GCC_64%/}
+QT6_TOOLS=${QT6_TOOLS:-$(dirname "$(dirname "$QT_GCC_64")")/Tools}
+export QT_GCC_64
+export QT6_TOOLS
+
+export PATH=$QT_GCC_64/bin:$PATH
+export PATH=$QT_GCC_64/include:$PATH
+export PATH=$QT6_TOOLS/QtCreator/bin:$PATH
+export PATH=$QT6_TOOLS/CMake/bin:$PATH
 #################################################################################
 ################################################################################
 
@@ -43,8 +61,16 @@ if [ ! -d "$RELEASE_DIR" ]; then
     mkdir RelWithDebInfo
 fi
 
+SHOULD_CONFIGURE=0
+if [ -f "$RELEASE_DIR/CMakeCache.txt" ]; then
+    CACHE_QT_PREFIX=$(grep '^CMAKE_PREFIX_PATH:PATH=' "$RELEASE_DIR/CMakeCache.txt" | cut -d= -f2-)
+    if [ "${CACHE_QT_PREFIX%/}" != "$QT_GCC_64" ]; then
+        SHOULD_CONFIGURE=1
+    fi
+fi
+
 # Only configure if CMakeCache.txt doesn't exist or --clean flag is provided
-if [ ! -f "$RELEASE_DIR/CMakeCache.txt" ] || [ "$2" = "--clean" ] || [ "$1" = "--clean" ]; then
+if [ ! -f "$RELEASE_DIR/CMakeCache.txt" ] || [ "$SHOULD_CONFIGURE" = "1" ] || [ "$2" = "--clean" ] || [ "$1" = "--clean" ]; then
     echo "Running CMake configuration..."
 
     # If --clean flag is provided, remove directories and recreate them

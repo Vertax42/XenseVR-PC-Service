@@ -233,6 +233,7 @@ void DeviceManagement::ReplySDKClient(const QString& uid, const TcpMessage& tcpM
     }
         break;
     case TCP_CLIENT_MSG_SEND_BYTES_TO_DEVICE:
+    case TCP_CLIENT_MSG_VIDEO_FRAME_WITH_TIMESTAMP:
     {
         // 直接使用原始的二进制数据
         emit recvDeviceMessageSignal(uid,PXREAServerSendCustomMessage,tcpMessage.m_msg);
