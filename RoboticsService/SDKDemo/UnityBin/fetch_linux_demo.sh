@@ -32,10 +32,21 @@ if [ ! -f "$DEMO_DIR/RobotLinuxDemo.x86_64" ]; then
     TMP="${TMPDIR:-/tmp}/$ASSET"
 
     if [ ! -f "$TMP" ]; then
-        if ! curl -fL --progress-bar -o "$TMP.part" "$ASSET_URL"; then
-            rm -f "$TMP.part"
+        # 38 MiB over whatever link the build host has. Retry and resume rather
+        # than failing the whole build on one dropped connection — plain
+        # `curl -fL` loses the entire transfer, which is how this was first
+        # written and how it first broke.
+        RETRY=(--retry 5 --retry-delay 2)
+        if curl --help all 2>/dev/null | grep -q -- '--retry-all-errors'; then
+            # curl >= 7.71. Without it, a mid-transfer drop (error 18) is not
+            # one of the errors --retry considers worth retrying.
+            RETRY+=(--retry-all-errors)
+        fi
+
+        if ! curl -fL --progress-bar "${RETRY[@]}" -C - -o "$TMP.part" "$ASSET_URL"; then
             echo "ERROR: could not download $ASSET_URL" >&2
-            echo "  Grab $ASSET from" >&2
+            echo "  The partial file is kept at $TMP.part — re-run to resume it." >&2
+            echo "  Or grab $ASSET from" >&2
             echo "  https://github.com/Vertax42/XenseVR-PC-Service/releases" >&2
             echo "  and extract it into $DIR/, or set ROBOT_LINUX_DEMO_URL." >&2
             exit 1
