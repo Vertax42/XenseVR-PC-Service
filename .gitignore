@@ -1,11 +1,7 @@
 # Compiled SDK binary (recompiled locally, not version-controlled)
 RoboticsService/SDK/linux/64/libPXREARobotSDK.so
-RoboticsService/SDK/linux_aarch64/64/libPXREARobotSDK.so
-RoboticsService/SDK/linux_aarch64/64/PXREARobotSDK.h
 RoboticsService/PXREARobotSDK/build/
-RoboticsService/Redistributable/linux_aarch64/SDK/
 RoboticsService/Package/debPack/package/
-RoboticsService/Package/debPackAArch64/package_arm64/
 RoboticsService/Package/output/*.deb
 
 # Published as a release asset instead of tracked here — see
