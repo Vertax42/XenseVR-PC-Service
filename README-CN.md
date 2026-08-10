@@ -85,9 +85,11 @@ RoboticsService 是一个企业级助手应用程序，包含多个子模块和 
             - 记录机器人传感器数据
             - 多类型传感器数据分类存储
     - `UnityBin/` - Unity演示程序
-        - `RobotWinDemo/` - Windows平台Unity演示
-        - `RobotLinuxDemo/` - Linux平台Unity演示
+        - `RobotLinuxDemo/` - Linux平台Unity演示。不纳入 git 版本控制：执行
+          `UnityBin/fetch_linux_demo.sh` 从对应 release 下载，Linux 打包流程
+          会自动调用
         - 提供3D可视化演示界面
+        - Windows 演示程序不再从本仓库分发
     - 演示功能
         - 设备连接和管理
         - 实时数据监控

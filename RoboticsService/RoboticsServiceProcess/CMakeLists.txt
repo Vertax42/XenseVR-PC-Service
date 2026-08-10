@@ -404,7 +404,9 @@ if(UNIX)
                       COMMAND ${CMAKE_COMMAND} -E copy "${PROJECT_SOURCE_DIR}/../Redistributable/linux/ConsoleDemo" ${INSTALL_DIR}
 
 
-                      COMMAND ${CMAKE_COMMAND} -E copy_directory "${PROJECT_SOURCE_DIR}/../SDKDemo/UnityBin/RobotLinuxDemo" "${INSTALL_DIR}/SDKDemo/RobotUnityDemo"
+                      # RobotLinuxDemo is a release asset, not a tracked directory — the
+                      # script downloads it on first use, then copies it here.
+                      COMMAND bash "${PROJECT_SOURCE_DIR}/../SDKDemo/UnityBin/fetch_linux_demo.sh" "${INSTALL_DIR}/SDKDemo/RobotUnityDemo"
                       COMMAND ${CMAKE_COMMAND} -E copy_directory "${PROJECT_SOURCE_DIR}/../SDKDemo/CppSrc" "${INSTALL_DIR}/SDKDemo/CppSrc"
                       COMMAND ${CMAKE_COMMAND} -E copy_directory "${PROJECT_SOURCE_DIR}/../SDK/include" "${INSTALL_DIR}/SDK/include"
                       COMMAND ${CMAKE_COMMAND} -E copy_directory "${PROJECT_SOURCE_DIR}/../SDK/linux/64" "${INSTALL_DIR}/SDK/x64"

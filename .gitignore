@@ -7,3 +7,7 @@ RoboticsService/Redistributable/linux_aarch64/SDK/
 RoboticsService/Package/debPack/package/
 RoboticsService/Package/debPackAArch64/package_arm64/
 RoboticsService/Package/output/*.deb
+
+# Published as a release asset instead of tracked here — see
+# RoboticsService/SDKDemo/UnityBin/fetch_linux_demo.sh
+RoboticsService/SDKDemo/UnityBin/RobotLinuxDemo/

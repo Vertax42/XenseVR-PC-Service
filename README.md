@@ -85,9 +85,12 @@ XenseVR-PC-Service is built upon an enterprise-level assistant application that 
             - Records robot sensor data
             - Multi-type sensor data classification storage
     - `UnityBin/` - Unity Demonstration Programs
-        - `RobotWinDemo/` - Windows platform Unity demonstration
-        - `RobotLinuxDemo/` - Linux platform Unity demonstration
+        - `RobotLinuxDemo/` - Linux platform Unity demonstration. Not tracked
+          in git: run `UnityBin/fetch_linux_demo.sh` to download it from the
+          matching release. The Linux packaging step does this for you.
         - Provides 3D visualization demonstration interface
+        - The Windows demonstration is no longer distributed from this
+          repository
     - Demonstration Features
         - Device connection and management
         - Real-time data monitoring
