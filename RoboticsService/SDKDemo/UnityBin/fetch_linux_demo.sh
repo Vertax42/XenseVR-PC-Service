@@ -22,7 +22,7 @@ DEMO_DIR="$DIR/RobotLinuxDemo"
 
 ASSET_VER="${ROBOT_LINUX_DEMO_VER:-0.2.0}"
 ASSET="RobotLinuxDemo_${ASSET_VER}_linux_x86_64.tar.gz"
-ASSET_URL="${ROBOT_LINUX_DEMO_URL:-https://github.com/Vertax42/XenseVR-PC-Service/releases/download/v${ASSET_VER}/${ASSET}}"
+ASSET_URL="${ROBOT_LINUX_DEMO_URL:-https://github.com/XenseRobotics-AI/XenseVR-PC-Service/releases/download/v${ASSET_VER}/${ASSET}}"
 ASSET_SHA256="${ROBOT_LINUX_DEMO_SHA256:-a8eaa5ed4d051ea84320c35df32d19f3acfe9f4e64acaf76b95b4ca6abd2a098}"
 
 # Test -f, not -x: the demo binary is mode 644 in the archive, which is why the
@@ -47,7 +47,7 @@ if [ ! -f "$DEMO_DIR/RobotLinuxDemo.x86_64" ]; then
             echo "ERROR: could not download $ASSET_URL" >&2
             echo "  The partial file is kept at $TMP.part — re-run to resume it." >&2
             echo "  Or grab $ASSET from" >&2
-            echo "  https://github.com/Vertax42/XenseVR-PC-Service/releases" >&2
+            echo "  https://github.com/XenseRobotics-AI/XenseVR-PC-Service/releases" >&2
             echo "  and extract it into $DIR/, or set ROBOT_LINUX_DEMO_URL." >&2
             exit 1
         fi
